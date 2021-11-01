@@ -45,7 +45,7 @@ function Account(props) {
 
 
                   <br/><br/><br/>
-      <div className="no-bottom no-top" id="content">
+      <div className="no-bottom no-top container" id="content">
       <h2>
         Collection
       </h2>
@@ -55,7 +55,7 @@ function Account(props) {
           <span className="tag is-info">{params.address}</span>
         </div>
       </div>
-      <Collection
+      {/* <Collection
         collection={collection}
         noCollectionNotification={
           <div className="notification">
@@ -67,7 +67,7 @@ function Account(props) {
             This collection is empty.
           </div>
         }
-      />
+      /> */}
     {/* </React.Fragment> */}
     </div>
     <br/><br/><br/>
