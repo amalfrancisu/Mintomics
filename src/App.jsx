@@ -1,39 +1,3 @@
-// import React from 'react'
-// import Home from './pages/Home'
-// import Footer from './components/Footer'
-// import Header from './components/Header'
-// import Create from './pages/Create'
-// import Collection from './pages/Collection'
-// import Publish from './pages/Publish'
-// import ItemDetails from './pages/ItemDetails'
-// import CreateSeries from './pages/CreateSeries'
-// import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
-// import User from './components/Footer/User'
-
-// import FlowContext, {Provider as FlowContextProvider} from './context/Flow.jsx';
-
-
-// const App = () => {
-//   return (
-//     <div>
-//       <Router>
-//         <Header/>
-//             <Switch>
-//               <Route exact path ='/' component={Home}/>
-//               <Route path ='/itemdetails' component={ItemDetails}/>
-//               <Route path ='/publish' component={Publish}/>
-//               <Route path ='/collection' component={Collection}/>
-//               <Route path ='/create' component={Create}/>
-//               <Route path ='/createseries' component={CreateSeries}/>
-//             </Switch>
-//             <Footer/>
-//         </Router>
-//     </div>
-//   )
-// }
-
-// export default App
-
 import {useContext} from 'react';
 import {
   BrowserRouter as Router,
@@ -46,8 +10,6 @@ import FlowContext, {Provider as FlowContextProvider} from './context/Flow.jsx';
 
 import Authenticate from './pages/Authenticate';
 import Home from './pages/Home';
-// import Draw from './pages/Draw';
-// import Trade from './pages/Trade';
 import Account from './pages/Account';
 import Create from './pages/Create'
 import CreateSeries from './pages/CreateSeries'
@@ -55,14 +17,7 @@ import CreateSeries from './pages/CreateSeries'
 import Header from './components/Header';
 import Body from './components/Body';
 import Footer from './components/Footer';
-import Navigation from './components/Navigation.jsx';
 import Publish from './pages/Publish'
-// import Publish1 from './pages/Publish1'
-
-// import './App.css';
-// import User from './components/Footer/User.jsx';
-// import Collection from './pages/Home/Collection.jsx';
-// import Collection from './pages/Collection'
 
 function PrivateRoute(props) {
   const flow = useContext(FlowContext);
