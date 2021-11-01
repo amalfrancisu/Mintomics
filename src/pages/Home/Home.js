@@ -46,9 +46,9 @@ function Home() {
                             <div className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     
                                 <div className="nft__item">
-                                    <a href="Web_NITC.pdf">
+                                    <a href="Hackathon_Journey.pdf">
                                     <div className="author_list_pp">
-                                        <a href="author.html">                                    
+                                        <a href="#">                                    
                                             <img className="lazy" src="assets/images/author/melwin.jpg" alt=""/>
                                             <i className="fa fa-check"></i>
                                         </a>
@@ -59,7 +59,7 @@ function Home() {
                                         </a>
                                     </div>
                                     <div className="nft__item_info">
-                                        <a href="/itemdetails">
+                                        <a href="/create">
                                             <h4>Hackathon Journey</h4>
                                         </a>
                                         <div className="nft__item_price">
