@@ -54,7 +54,7 @@ function Home() {
                                         </a>
                                     </div>
                                     <div className="nft__item_wrap">
-                                        <a href="/create">
+                                        <a href="Hackathon_Journey.pdf">
                                             <img src="assets/images/items/frame1.jpg" className="lazy nft__item_preview" alt=""/>
                                         </a>
                                     </div>
@@ -106,7 +106,7 @@ function Home() {
                                     <i className=" fadeInUp bg-color-2 i-boxed icon_book"></i>
                                     <div className="text">
                                         <h4 className=" fadeInUp">Read Comic</h4>
-                                        <p className=" fadeInUp" data-wow-delay=".25s">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.</p>
+                                        <p className=" fadeInUp" data-wow-delay=".25s">Read your favourite Comic right here! Once you like the comic you could own the comic.</p>
                                     </div>
                                     <i className="wm icon_book"></i>
                                 </div>
@@ -116,7 +116,7 @@ function Home() {
                                     <i className=" fadeInUp bg-color-2 i-boxed icon_pencil"></i>
                                     <div className="text">
                                         <h4 className=" fadeInUp">Create Comic</h4>
-                                        <p className=" fadeInUp" data-wow-delay=".25s">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.</p>
+                                        <p className=" fadeInUp" data-wow-delay=".25s">As an artist, Mintomics gives you infinite opportunites to create your own comic.</p>
                                     </div>
                                     <i className="wm icon_pencil"></i>
                                 </div>
@@ -126,7 +126,7 @@ function Home() {
                                     <i className="fadeInUp bg-color-2 i-boxed icon_tags_alt"></i>
                                     <div className="text">
                                         <h4 className="fadeInUp">Mint Comic</h4>
-                                        <p className="fadeInUp" data-wow-delay=".25s">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.</p>
+                                        <p className="fadeInUp" data-wow-delay=".25s">Mint the comic you created. Once minted, this comic could later be sold and bought by people.</p>
                                     </div>
                                     <i className="wm icon_tags_alt"></i>
                                 </div>
