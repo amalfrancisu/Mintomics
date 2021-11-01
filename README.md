@@ -1,5 +1,9 @@
 # Mintomics
 
-yarn  #to install the dependencies
 
-yarn start  #to start the project
+#to install the dependencies
+yarn 
+
+
+#to start the project
+yarn start  
