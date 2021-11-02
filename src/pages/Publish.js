@@ -56,7 +56,7 @@ function Publish(props) {
           try {
             const response = await flow.createCollection();
             if (response.statusCode === 0) {
-              await flow.fetchCollection();
+              await flow.fetchCollection1();
               dispatch({type: 'stopLoading'});
             }
           } catch (error) {

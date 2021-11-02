@@ -21,8 +21,8 @@ function Home() {
                                     <h1>Read and own your favourite comics.</h1>
                                     <p className="lead">Easiest place to create and mint comics.<br/>Sign up and get started today.</p>
                                     <div className="spacer-20"></div>
-                                    <a href="explore.html" className="btn-main">Explore</a>&nbsp;&nbsp;
-                                    <a href="createSeries.html" className="btn-main btn-white">Create</a>
+                                    <a href="#" className="btn-main">Explore</a>&nbsp;&nbsp;
+                                    <a href="/create" className="btn-main btn-white">Create</a>
                                     <div className="spacer-double"></div>
                                 </div>
                             </div>

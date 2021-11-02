@@ -11,7 +11,7 @@ function Account(props) {
   const [collection, setCollection] = useState(undefined);
   const flow = useContext(FlowContext);
 
-  const fetchCollection = useCallback(
+  const fetchCollection1 = useCallback(
     async (addresss) => {
       const collection = await flow.fetchCollection1(addresss);
       setCollection(collection);
@@ -23,9 +23,9 @@ function Account(props) {
     if (address !== params.address) {
       setAddress(params.address);
       setCollection(null);
-      fetchCollection(params.address);
+      fetchCollection1(params.address);
     }
-  }, [address, params.address, fetchCollection]);
+  }, [address, params.address, fetchCollection1]);
 
   return (
     <div>
