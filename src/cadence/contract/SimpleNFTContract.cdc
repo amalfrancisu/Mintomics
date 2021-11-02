@@ -80,10 +80,7 @@ pub contract SimpleNFTContract: NonFungibleToken {
 
         // getIDs returns an array of the IDs that are in the collection
         pub fun getIDs(): [UInt64] {
-            if(self.ownedNFTs.keys == nil)
-                return [];
-            else
-                return self.ownedNFTs.keys
+            return self.ownedNFTs.keys
         }
 
         // borrowNFT gets a reference to an NFT in the collection
