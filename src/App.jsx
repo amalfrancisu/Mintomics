@@ -67,18 +67,18 @@ function App() {
           {/* <Navigation /> */}
             {/* <Body> */}
             <Switch>
-              <PrivateRoute exact path="/">
+              <Route exact path="/">
                 <Home />
-              </PrivateRoute>
-              <PrivateRoute path="/create">
+              </Route>
+              <Route path="/create">
                 <Create />
-              </PrivateRoute>
-              <PrivateRoute path="/createseries">
+              </Route>
+              <Route path="/createseries">
                 <CreateSeries />
-              </PrivateRoute>
-              <PrivateRoute path="/publish">
+              </Route>
+              <Route path="/publish">
                 <Publish />
-              </PrivateRoute>
+              </Route>
               <Route path="/authenticate">
                 <Authenticate />
               </Route>
