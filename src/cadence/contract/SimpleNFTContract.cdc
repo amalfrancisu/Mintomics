@@ -26,7 +26,7 @@ pub contract SimpleNFTContract: NonFungibleToken {
 
         init(_ipfsHash: String) {
             self.id = SimpleNFTContract.totalSupply
-            SimpleNFTContract.totalSupply = SimpleNFTContract.totalSupply + (1 as UInt64)
+            SimpleNFTContract.totalSupply = SimpleNFTContract.totalSupply + UInt64(1)
             self.ipfsHash = _ipfsHash
         }
     }
@@ -86,14 +86,14 @@ pub contract SimpleNFTContract: NonFungibleToken {
         // borrowNFT gets a reference to an NFT in the collection
         // so that the caller can read its metadata and call its methods
         pub fun borrowNFT(id: UInt64): &NonFungibleToken.NFT {
-            return &self.ownedNFTs[id] as &NonFungibleToken.NFT
+            return  (&self.ownedNFTs[id] as &NonFungibleToken.NFT?)!
         }
 
         // borrowNFTMetadata gets a reference to an NFT in the collection
         // so that the caller can read its id and metadata
         pub fun borrowNFTMetadata(id: UInt64): &SimpleNFTContract.NFT? {
             if self.ownedNFTs[id] != nil {
-                let ref = &self.ownedNFTs[id] as auth &NonFungibleToken.NFT
+                let ref = (&self.ownedNFTs[id] as auth &NonFungibleToken.NFT?)!
                 return ref as! &SimpleNFTContract.NFT
             } else {
                 return nil
@@ -128,3 +128,4 @@ pub contract SimpleNFTContract: NonFungibleToken {
     }
 }
 
+ 
