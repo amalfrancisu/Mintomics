@@ -1,0 +1,34 @@
+{
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"contracts": {
+		"SimpleNFTContract": "./src/cadence/contract/SimpleNFTContract.cdc",
+	  "NonFungibleToken":"./src/cadence/contract/NonFungibleToken.cdc"
+	},
+	"accounts": {
+				"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "f555c611bced1c93c7576f7f4315840fec1c1ec5ad0f4d7e2ecfb5fe82dacf2c"
+		},
+	"testnet-account": {
+		"address": "0x2b5c95910413da9a",
+		"key": {
+		  "type": "hex",
+		  "index": 0,
+		  "signatureAlgorithm": "ECDSA_P256",
+		  "hashAlgorithm": "SHA3_256",
+		  "privateKey": "2a182d5627e6698d54e07e2264d5b21f9e08c1ff4bfb3f0a7663352183ba7862"
+		}
+	  }
+	},
+	"deployments": {
+	  "testnet": {
+		"testnet-account": [
+			"SimpleNFTContract","NonFungibleToken"
+		]
+	  }
+	}  
+}
