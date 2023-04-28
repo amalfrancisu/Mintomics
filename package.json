@@ -5,6 +5,7 @@
   "private": true,
   "homepage": "/",
   "dependencies": {
+    "@blocto/fcl": "^1.0.0-alpha.1",
     "@onflow/fcl": "^0.0.77",
     "@onflow/types": "^0.0.4",
     "@testing-library/jest-dom": "^5.11.4",

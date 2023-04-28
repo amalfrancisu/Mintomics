@@ -1,6 +1,8 @@
 import React, {useReducer, useEffect, useCallback} from 'react';
-import * as fcl from '@onflow/fcl';
+import * as fcl from "@blocto/fcl";
+
 import * as FlowTypes from '@onflow/types';
+
 
 import Picture from '../model/Picture.js';
 import { Route } from 'react-router';
@@ -95,7 +97,7 @@ function Provider(props) {
     async () => {
       const transactionId = await fcl.send([
         fcl.transaction`
-        import SimpleNFTContract from 0x0d6b48dbc69cfc62
+        import SimpleNFTContract from 0x2b5c95910413da9a
         import NonFungibleToken from 0x631e88ae7f1d7c20
         
         // This transaction is what an account would run
@@ -286,7 +288,7 @@ function Provider(props) {
       console.log("Inside mintComic")
       const transactionId = await fcl.send([
         fcl.transaction`
-        import SimpleNFTContract from 0x0d6b48dbc69cfc62
+        import SimpleNFTContract from 0x2b5c95910413da9a
         import NonFungibleToken from 0x631e88ae7f1d7c20
 
         transaction(recipient: Address, ipfsHash: String) {
