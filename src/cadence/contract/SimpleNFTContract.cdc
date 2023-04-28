@@ -1,4 +1,4 @@
-import NonFungibleToken from "../Flow/NonFungibleToken.cdc"
+import NonFungibleToken from "../contract/NonFungibleToken.cdc"
 
 pub contract SimpleNFTContract: NonFungibleToken {
 
